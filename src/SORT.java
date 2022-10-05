@@ -1,4 +1,8 @@
-import java.io.*;
+import java.io.IOException;
+import java.io.PrintStream;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -14,7 +18,7 @@ public class SORT {
             PrintWriter pr = new PrintWriter("SORTED");
             while ((line = br.readLine()) != null) {
                 String[] values = line.split(",");
-                list.add(values[0]);
+                list.add(values[1]);
             }
             list.remove(0);
             Collections.sort(list);
